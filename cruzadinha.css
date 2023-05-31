@@ -1,4 +1,15 @@
 input{
     height: 40px;
     width: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
+
+input:focus{
+    outline: none;
+}
+
+div{
+    text-transform: uppercase;
+}
+
