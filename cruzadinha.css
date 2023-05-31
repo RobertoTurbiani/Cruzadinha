@@ -1,14 +1,16 @@
-input{
+div{
     height: 40px;
     width: 40px;
-    border-radius: 5px;
-    border: 1px solid black;
-    text-transform: uppercase;
+    margin-top: 10%;
+    border: solid 1px black;
+    
 }
 
-input:focus{
-    outline: none;
+.ram {
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    align-items: center;
+    border: none;
+    
 }
-
-
-
