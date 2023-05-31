@@ -1,7 +1,7 @@
 /*Ram */
 
-var ram = ram_R.value
+var ram = ram.value
 
 if (ram == 'R') {
-    ram_R.style.backgroundcolor='green'
+    ram.style.backgroundcolor='green'
 }
