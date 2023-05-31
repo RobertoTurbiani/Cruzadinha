@@ -221,9 +221,9 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="=ula databus" >U</td>
-            <td class="=ula">L</td>
-            <td class="=ula">A</td>
+            <td class="ula databus" >U</td>
+            <td class="ula">L</td>
+            <td class="ula">A</td>
             <td></td>
             <td></td>
             <td class="registrador">R</td>
@@ -539,26 +539,26 @@
 </html>
 
 <script>
-        var ListaValidacao = [
-            "ula","dma","dataBus","addresbus","flash","rom","ram","quadCore","cpu","cs","dualCore","cache","registrador","memoriaDeMassa","i7","i5","threads","eprom"];
+        var listaValidacao = [
+            "ULA","DMA","DATABUS","ADDRESSBUS","FLASH","ROM","RAM","QUADCORE","CPU","CS","DUALCORE","CACHE","REGISTRADORES","MEMORIADEMASSA","I7","I5","THREADS","EPROM"];
 
     function validarResposta() {
         var resposta = ipt_validacao.value;
-        var validado = false
+        var acerto = false
 
-        for (var i = 0; i < ListaValidacao.length; i++ ) {
-            if (resposta.toUpperCase() == ListaValidacao[i]){
-                validado = true } 
+        for (var i = 0; i < listaValidacao.length; i++ ) {
+            if (resposta.toUpperCase() == listaValidacao[i]){
+                acerto = true } 
         }
-        if(validado == true) {
-            alert("è isso ai") 
-            pintarLetras(resposta) 
+        if(acerto == true) {
+            alert("É isso ai, continue assim") 
+            revelar(resposta) 
         }else {
             alert("Errou")
                 }
     }
 
-    function pintarLetras (resposta) {
+    function revelar (resposta) {
         var ocultar = document.getElementsByClassName(`${resposta}`);
         for (let i = 0; i < ocultar.length; i++) {
             const element = ocultar[i];
