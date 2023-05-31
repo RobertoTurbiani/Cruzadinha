@@ -6,294 +6,567 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="cruzadinha.css">
-    <!-- <script src="cruzadinha.js"></script> -->
 </head>
 <body>
-    <div class="ram">
-    <div id="r"> </div>
-    <div id="a"> </div>
-    <div id="m"> </div>
-    </div>
-<div class="rom">
-    <div id="r2"> </div>
-    <div id="o"> </div>
-    <div id="m2"> </div>
-</div>
-<div class="cpu">
-    <div id="c"> </div>
-    <div id="p"> </div>
-    <div id="u"> </div>
-</div>
-<div class="memoria_de_massa">
-    <div id="m3"> </div>
-    <div id="e"> </div>
-    <div id="m4"> </div>
-    <div id="o2"> </div>
-    <div id="r3"> </div>
-    <div id="i"> </div>
-    <div id="a2"> </div>
-    <div id="d"> </div>
-    <div id="e2"> </div>
-    <div id="m5"> </div>
-    <div id="a3"> </div>
-    <div id="s"> </div>
-    <div id="s2"> </div>
-    <div id="a4"> </div>
-</div>
-<div class="eprom">
-    <div id="E"> </div>
-    <div id="P"> </div>
-    <div id="R"> </div>
-    <div id="O"> </div>
-    <div id="M"> </div>
-</div>
-<div class="i_sete">
-    <div id="i2"> </div>
-    <div id="sete"> </div>
-</div>
-<div class="address">
-    <div id="a5"> </div>
-    <div id="d2"> </div>
-    <div id="d3"> </div>
-    <div id="r4"> </div>
-    <div id="e3"> </div>
-    <div id="s3"> </div>
-    <div id="s4"> </div>
-</div>
-<div class="data_bus">
-    <div id="d4"> </div>
-    <div id="a6"> </div>
-    <div id="t"> </div>
-    <div id="a7"> </div>
-    <div id="b"> </div>
-    <div id="u2"> </div>
-    <div id="s5"> </div>
-</div>
-<div class="threads">
-    <div id="t2"> </div>
-    <div id="h"> </div>
-    <div id="r5"> </div>
-    <div id="e4"> </div>
-    <div id="a8"> </div>
-    <div id="d5"> </div>
-    <div id="s6"> </div>
-</div>
-<div class="quadcore">
-    <div id="q"> </div>
-    <div id="u3"> </div>
-    <div id="a9"> </div>
-    <div id="d6"> </div>
-    <div id="c2"> </div>
-    <div id="o4"> </div>
-    <div id="r6"> </div>
-    <div id="e5"> </div>
-</div>
-<div class="dma">
-    <div id="d7"> </div>
-    <div id="m6"> </div>
-    <div id="a10"> </div>
-</div>
-<div class="cache">
-    <div id="c3"> </div>
-    <div id="a11"> </div>
-    <div id="c4"> </div>
-    <div id="h2"> </div>
-    <div id="e6"> </div>
-</div>
-<div class="registradores">
-    <div id="r7"> </div>
-    <div id="e7"> </div>
-    <div id="g"> </div>
-    <div id="i3"> </div>
-    <div id="s7"> </div>    
-    <div id="t3"> </div>
-    <div id="r8"> </div>
-    <div id="a12"> </div>
-    <div id="d8"> </div>
-    <div id="o5"> </div>
-    <div id="r9"> </div>
-    <div id="e8"> </div>
-    <div id="s8"> </div>
-</div>
-<div class="i_cinco">
-    <div id="i4"> <div>
-    <div id="cinco"> <div>
-</div>
-<div class="ula">
-    <div id="u4"> </div>
-    <div id="l1"> </div>
-    <div id="a13"> </div>
-</div>
-<div class="flash">
-    <div id="f"> </div>
-    <div id="l2"> </div>
-    <div id="a14"> </div>
-    <div id="s9"> </div>
-    <div id="h3"> </div>
-</div>
-<div class="dualcore">
-    <div id="d9"> </div>
-    <div id="u5"> </div>
-    <div id="a15"> </div>
-    <div id="l3"> </div>
-    <div id="c4"> </div>
-    <div id="o6"> </div>
-    <div id="r10"> </div>
-    <div id="e9"> </div>
-</div>
+    <div class="containerGeral">
+    <h3> Responda </h3>
+    <div id="div_perguntas"></div>
 
-<input id="ipt_validar">
-<button onclick="verificar()">Veificar</button>
+    <input id="ipt_validacao">
+    <button onclick="validarResposta()">Validar Resposta</button><br> <br>
+    <div class="section">
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>    
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="registrador">R</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dma dataBus">D</td>
+            <td class="dma">M</td>
+            <td class="dma">A</td>
+            <td></td>
+            <td></td>
+            <td class="registrador eprom">E</td>
+            <td class="eprom">P</td>
+            <td class="eprom">R</td>
+            <td class="eprom">O</td>
+            <td class="eprom">M</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>    
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="databus">A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="registrador">G</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="databus">T</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="registradori5">I</td>
+            <td class=i5">5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td class="memoriaDeMassa">M</td>
+            <td class="memoriaDeMassa">E</td>
+            <td class="memoriaDeMassa">M</td>
+            <td class="memoriaDeMassa">O</td>
+            <td class="memoriaDeMassa">R</td>
+            <td class="memoriaDeMassa i7">I</td>
+            <td class="memoriaDeMassa dataBus">A</td>
+            <td class="memoriaDeMassa">D</td>
+            <td class="memoriaDeMassa">E</td>
+            <td class="memoriaDeMassa">M</td>
+            <td class="memoriaDeMassa">A</td>
+            <td class="registrador memoriaDeMassa">S</td>
+            <td class="memoriaDeMassa">S</td>
+            <td class="memoriaDeMassa">A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="i7">7</td>
+            <td class="databus">B</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="registrador">T</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="=ula databus" >U</td>
+            <td class="=ula">L</td>
+            <td class="=ula">A</td>
+            <td></td>
+            <td></td>
+            <td class="registrador">R</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="cs">C</td>
+            <td></td>
+            <td class="dualCore">D</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td class="threads">T</td>
+            <td class="threads">H</td>
+            <td class="threads">R</td>
+            <td class="threads">E</td>
+            <td class="threads">A</td>
+            <td class="threads">D</td>
+            <td class="threads databus">S</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="registrador addreasBus">A</td>
+            <td class="addreasBus">D</td>
+            <td class="addreasBus">D</td>
+            <td class="addreasBus">R</td>
+            <td class="addreasBus">E</td>
+            <td class="addreasBus ">S</td>
+            <td class="addreasBus cs">S</td>
+            <td class="addreasBus">B</td>
+            <td class="addreasBus dualCore">U</td>
+            <td class="addreasBus">S</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="registrador">D</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dualCore">A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="registrador" >O</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="flash">F</td>
+            <td class="flash dualCore">L</td>
+            <td class="flash">A</td>
+            <td class="flash">S</td>
+            <td class="flash">H</td>
+            <td></td>
+        
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="ram">R</td>
+            <td></td>
+            <td></td>
+            <td class="registrador">R</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dualCore">C</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="cache">C</td>
+            <td class="cache ram">A</td>
+            <td class="cache">C</td>
+            <td class="cache">H</td>
+            <td class="registrador cache">E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="rom">R</td>
+            <td class="rom dualCore">O</td>
+            <td class="rom">M</td>
+            <td></td>
+            <td></td>
+            <td></td>
+    
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="ram">M</td>
+            <td></td>
+            <td></td>
+            <td class="registrador">S</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dualCore">R</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="quadCore">Q</td>
+            <td class="quadCore">U</td>
+            <td class="quadCore">A</td>
+            <td class="quadCore">D</td>
+            <td class="quadCore cpu">C</td>
+            <td class="quadCore">O</td>
+            <td class="quadCore">R</td>
+            <td class="quadCore dualCore">E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="cpu">P</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="cpu dataBus">U</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+            
+        </tr>       
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+            
+        </tr>
+    </table>
+</div>
+</div>
 </body>
 </html>
 
 <script>
-    function verificar() {
-        var validacao = ipt_validar.value
-        if (validacao == 'RAM' || validacao == 'ram') {
-            r.innerHTML = 'R'
-            a.innerHTML = 'A'
-            m.innerHTML = 'M'
-        }
-        if(validacao == 'ROM' || validacao == 'rom'){
-            r2.innerHTML = 'R'
-            o.innerHTML = 'O'
-            m2.innerHTML = 'M'
-        }
-        if(validacao == 'cpu' || validacao == 'CPU' ){
-            c.innerHTML = 'C'
-            p.innerHTML = 'P'
-            u.innerHTML = 'U'
-        }
-        if(validacao == 'memoria de massa' || validacao == 'MEMORIA DE MASSA'){
-            m3.innerHTML = 'M'
-            e.innerHTML = 'E'
-            m4.innerHTML = 'M'
-            o2.innerHTML = 'O'
-            r3.innerHTML = 'R'
-            i.innerHTML = 'I'
-            a2.innerHTML = 'A'
-            d.innerHTML = 'D'
-            e5.innerHTML = 'E'
-            m5.innerHTML = 'M'
-            a3.innerHTML = 'A'
-            s.innerHTML = 'S'
-            s2.innerHTML = 'S'
-            a4.innerHTML = 'A'
-        }
-        if(validacao == 'eprom' || validacao == 'EPROM'){
-            E.innerHTML = 'E'
-            P.innerHTML = 'P'
-            R.innerHTML = 'R'
-            O.innerHTML = 'O'
-            M.innerHTML = 'M'
-        }
+        var ListaValidacao = [
+            "ula","dma","dataBus","addresbus","flash","rom","ram","quadCore","cpu","cs","dualCore","cache","registrador","memoriaDeMassa","i7","i5","threads","eprom"];
 
-        if(validacao == 'i7' || validacao == 'I7') {
-            i2.innerHTML = 'I'
-            sete.innerHTML = '7'
-        }
+    function validarResposta() {
+        var resposta = ipt_validacao.value;
+        var validado = false
 
-        if(validacao == 'dualcore' || validacao == 'DUALCORE') {
-            d9.innerHTML = 'D'
-            u5.innerHTML = 'U'
-            a15.innerHTML = 'A'
-            l3.innerHTML = 'L'
-            c4.innerHTML = 'C'
-            o6.innerHTML = 'O'
-            r10.innerHTML = 'R'
-            e9.innerHTML = 'E'
+        for (var i = 0; i < ListaValidacao.length; i++ ) {
+            if (resposta.toUpperCase() == ListaValidacao[i]){
+                validado = true } 
         }
-
-        if(validacao == 'flash' || validacao == 'FLASH') {
-            f.innerHTML == 'F'
-            l2.innerHTML == 'L'
-            a14.innerHTML == 'A'
-            s9.innerHTML == 'S'
-            h3.innerHTML == 'H'
-        }
-
-        if(validacao == 'address' || validacao == 'ADDRESS') {
-            a5.innerHTML == 'A'
-            d2.innerHTML == 'D'
-            d3.innerHTML == 'D'
-            r4.innerHTML == 'R'
-            e3.innerHTML == 'E'
-            s3.innerHTML == 'S'
-            s4.innerHTML == 'S'
-        }
-
-        if(validacao == 'ula' || validacao == 'ULA') {
-            u4.innerHTML == 'U'
-            l1.innerHTML == 'L'
-            a13.innerHTML == 'A'
-        }
-
-        if(validacao == 'i5' || validacao == 'I5') {
-            i4.innerHTML == 'I'
-            cinco.innerHTML == '5'
-        }
-
-        if(validacao == 'registradores' || validacao == 'registradores') {
-            r7.innerHTML == 'R'
-            e7.innerHTML == 'E'
-            g.innerHTML == 'G'
-            i3.innerHTML == 'I'
-            s7.innerHTML == 'S'
-            t3.innerHTML == 'T'
-            r8.innerHTML == 'R'
-            a12.innerHTML == 'A'
-            d8.innerHTML == 'D'
-            o5.innerHTML == 'O'
-            r9.innerHTML == 'R'
-            e8.innerHTML == 'E'
-            s8.innerHTML == 'S'
-        }
-
-        if(validacao == 'cache' || validacao == 'CACHE') {
-            c3.innerHTML == 'C'
-            a11.innerHTML == 'A'
-            c4.innerHTML == 'C'
-            h2.innerHTML == 'H'
-            e6.innerHTML == 'E'
-        }
-
-        if(validacao == 'dma' || validacao == 'DMA') {
-            d7.innerHTML == 'D'
-            m6.innerHTML == 'M'
-            a10.innerHTML == 'A'
-        }
-
-        if(validacao == 'quadcore' || validacao == 'QUADCORE') {
-            q.innerHTML == 'Q'
-            u3.innerHTML == 'U'
-            a9.innerHTML == 'A'
-            d6.innerHTML == 'D'
-            c2.innerHTML == 'C'
-            o4.innerHTML == 'O'
-            r6.innerHTML == 'R'
-            e5.innerHTML == 'E'
-        }
-
-        if(validacao == 'threads' || validacao == 'THREADS') {
-            t2.innerHTML == 'T'
-            h.innerHTML == 'H'
-            r5.innerHTML == 'R'
-            e4.innerHTML == 'E'
-            a8.innerHTML == 'A'
-            d5.innerHTML == 'D'
-            s6.innerHTML == 'S'
-        }
-
-        if(validacao == 'data bus' || validacao == 'DATA BUS') {
-            d4.innerHTML == 'D'
-            a6.innerHTML == 'A'
-            t.innerHTML == 'T'
-            a7.innerHTML == 'A'
-            b.innerHTML == 'B'
-            u2.innerHTML == 'U'
-            s5.innerHTML == 'S'
-        }
-
+        if(validado == true) {
+            alert("è isso ai") 
+            pintarLetras(resposta) 
+        }else {
+            alert("Errou")
+                }
     }
+
+    function pintarLetras (resposta) {
+        var ocultar = document.getElementsByClassName(`${resposta}`);
+        for (let i = 0; i < ocultar.length; i++) {
+            const element = ocultar[i];
+            element.style.backgroundColor = "white"
+            }
+            }
+
+    function pergunta(){
+
+    }
 </script>
