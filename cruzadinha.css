@@ -1,11 +1,12 @@
 .containerGeral{
     width: 80%;
+    margin: auto;
 }
 
 td {
     width: 2vw;
     height: 4vh;
-    background-color: beige;
+    background-color: rgb(137, 137, 255);
     font-size: 150%;
     justify-content: center;
     text-align: center;
@@ -13,82 +14,100 @@ td {
 
 }
 
+input:focus{
+    outline: none;
+}
+
+button{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
 #respostaOculta {
     background-color: black;        
 }
-.REGISTRADORES {
+.registrador {
     background-color: black;        
 }
-.ULA {
+.ula {
     background-color: black;        
 }
-.DMA {
+.dma {
     background-color: black;        
 
 }
-.DATABUS {
+.databus {
     background-color: black;        
 
 }
-.ADDRESSBUS {
+.addreasBus {
     background-color: black;        
 
 }
-.FLASH{
+.flash{
     background-color: black;        
 
 }
-.ROM{
+.rom{
     background-color: black;        
 
 }
-.RAM{
+.ram{
     background-color: black;        
 
 }
-.QUADCORE{
+.quadCore{
     background-color: black;        
 
 }
-.CPU{
+.cpu{
     background-color: black;        
 
 }
-.CS{
+.cs{
     background-color: black;        
 
 }
-.DUALCORE{
+.dualCore{
     background-color: black;        
 
 }
-.CACHE{
+.cache{
     background-color: black;        
 
 }
-.REGISTRADORES{
+.registrador{
     background-color: black;        
 
 }
-.MEMORIADEMASSA{
+.memoriaDeMassa{
     background-color: black;        
 
 }
-.I7{
+.i7{
     background-color: black;        
 
 }
-.I5{
+.i5{
     background-color: black;        
 
 }
-.THREADS{
+.threads{
     background-color: black;        
 
 }
-.EPROM{
+.eprom{
     background-color: black;        
 
+}
+
+.registradori5{
+    background-color: black;
+}
+
+.i5{
+    background-color: black;
 }
 
 
