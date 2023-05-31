@@ -53,7 +53,7 @@ div{
     display: flex;
     width: 152px;
     height: 793px;
-    margin-top: -431px;
+    margin-top: -474px;
     margin-left: 296px;
     align-items: center;
     border: none;
@@ -73,7 +73,56 @@ div{
 
 .i_sete{
     display: flex;
-    
+    width: 104px;
+    height: 53px;
+    margin-top: 61px;
+    margin-left: 344px;
+    align-items: center;
+    border: none;
+    justify-content: space-evenly;
+
+}
+.address{
+    display: flex;
+    width: 347px;
+    height: 0px;
+    margin-top: 18px;
+    margin-left: 344px;
+    align-items: center;
+    border: none;
+    justify-content: space-evenly;
+
+}
+.data_bus{
+    display: flex;
+    width: 172px;
+    height: 540px;
+    flex-direction: column;
+    margin-top: -84px;
+    margin-left: 383px;
+    align-items: center;
+    border: none;
+}
+.threads{
+    display: flex;
+    width: 160px;
+    height: 446px;
+    flex-direction: column;
+    margin-top: -670px;
+    margin-left: 486px;
+    align-items: center;
+    border: none;
+
+}
+.quadcore{
+        display: flex;
+    width: 347px;
+    height: 0px;
+    margin-top: 18px;
+    margin-left: 344px;
+    align-items: center;
+    border: none;
+    justify-content: space-evenly;
 }
 
 input{
