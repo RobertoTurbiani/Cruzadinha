@@ -1,5 +1,9 @@
+.conteudo{
+    display: flex;
+}
+
 table{
-    
+    border-collapse: collapse;
 }
 
 td {
