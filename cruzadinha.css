@@ -71,6 +71,11 @@ div{
     justify-content: space-evenly;
 }
 
+.i_sete{
+    display: flex;
+    
+}
+
 input{
     text-transform: uppercase;
 }
