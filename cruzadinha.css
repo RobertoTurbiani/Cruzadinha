@@ -3,13 +3,12 @@ input{
     width: 40px;
     border-radius: 5px;
     border: 1px solid black;
+    text-transform: uppercase;
 }
 
 input:focus{
     outline: none;
 }
 
-div{
-    text-transform: uppercase;
-}
+
 
