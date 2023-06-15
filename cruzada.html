@@ -9,6 +9,10 @@
 </head>
 
 <body>
+
+    <h1>CRUZADINHA</h1>
+
+    <div class="cruzadaEresposta">
     <table class="cruzadinha">
 
 
@@ -329,8 +333,57 @@
         </tr>
 
     </table>
-    <input id="ipt_resposta">
-    <button onclick="responder()">Responder</button>
+
+    <div class="resposta">
+        <input id="ipt_resposta">
+        <button onclick="responder()">Responder</button>
+    </div>
+
+    </div>
+
+        <div  id="dicas" class="dicas">
+            <h1>DICAS</h1>
+        1. Sou um componente essencial dentro de um processador, responsável por realizar cálculos e operações lógicas. Sem mim, a CPU teria dificuldades em executar tarefas matemáticas e lógicas complexas. Quem sou eu?<br>
+
+        2. Dentre as memórias, sou uma que permite a gravação de dados através de um processo especial. Sou considerada uma memória não volátil e amplamente utilizada para armazenar informações que precisam ser preservadas mesmo quando a energia é desligada. Quem sou eu?<br>
+
+        3. Sou um tipo de memória que contém dados permanentes pré-gravados durante a fabricação. Minha principal característica é que meus dados não podem ser alterados ou apagados pelo usuário. Quem sou eu?<br>
+
+        4. Sou uma memória que oferece alta velocidade de acesso e leitura de dados. Sou amplamente utilizada para armazenar temporariamente informações que estão sendo processadas ativamente pelo computador. Quem sou eu?<br>
+
+        5. Sou componentes de armazenamento de alta velocidade localizados dentro do processador. Meu objetivo é armazenar dados e instruções que são frequentemente acessados pela CPU. Quem sou eu?<br>
+
+        6. Sou um tipo de memória permanente que armazena dados mesmo quando o computador está desligado. Sou usada para armazenar informações de forma duradoura, como arquivos e programas. Quem sou eu?<br>
+
+        7. Sou uma linha de processadores desenvolvida pela Intel, conhecida por oferecer alto desempenho em tarefas computacionais. Sou amplamente utilizado em computadores pessoais e servidores. Quem sou eu?<br>
+
+        8. Sou uma linha de processadores desenvolvida pela Intel, conhecida por oferecer alto desempenho em tarefas computacionais. Sou amplamente utilizado em computadores pessoais e servidores. Quem sou eu?<br>
+
+        9. Sou uma memória de acesso rápido localizada entre a CPU e a memória principal. Meu objetivo é armazenar temporariamente dados frequentemente acessados pela CPU, a fim de acelerar a velocidade de processamento. Quem sou eu?<br>
+
+        10. Sou um tipo de memória não volátil que pode ser eletricamente apagada e reprogramada. Sou amplamente utilizado em dispositivos portáteis, como pen drives e cartões de memória. Quem sou eu?<br>
+
+        11. Sou uma descrição de um processador que possui quatro (quadcore) núcleos de processamento independentes em um único chip. Isso permite que o processador execute múltiplas tarefas simultaneamente. Quem sou eu?<br>
+
+        12. Sou uma descrição de um processador que possui dois (dualcore) núcleos de processamento independentes em um único chip. Isso permite que o processador execute múltiplas tarefas simultaneamente. Quem sou eu?<br>
+
+        13. Sou o cérebro do computador, responsável por executar instruções e processar dados. Sou composto por unidades de controle, registradores e uma Unidade Lógica e Aritmética (ULA). Quem sou eu?<br>
+
+        14. Sou a sigla para 'Chip Select' (Seleção de Chip). Sou um sinal utilizado para selecionar um dispositivo ou componente específico em um barramento de comunicação. Quem sou eu?<br>
+
+        15. Sou um caminho de comunicação utilizado para transferir dados entre componentes de um computador. Sou responsável por transmitir informações binárias em paralelo. Quem sou eu?<br>
+
+        16. Sou um caminho de comunicação utilizado para transmitir endereços de memória entre componentes de um computador. Sou responsável por indicar a localização específica dos dados que serão lidos ou gravados. Quem sou eu?<br>
+
+        17. Sou unidades individuais de execução dentro de um processador. Posso ser pensado como 'subprocessos' que permitem que a CPU realize múltiplas tarefas simultaneamente. Quem sou eu?<br>
+
+        18. Sou a sigla para 'Direct Memory Access' (Acesso Direto à Memória). Sou um recurso que permite que dispositivos periféricos acessem a memória principal diretamente, sem a intervenção da CPU. Quem sou eu?<br>
+        
+        </div>
+        
+    
+
+    
 </body>
 
 </html>
@@ -340,13 +393,15 @@
 
         var resposta = ipt_resposta.value;
            
-        var validarResposta = ["ULA","EPROM","ROM","RAM","REGISTRADORES","MEMORIADEMASSA","I5","I7","CACHE"
+        var validarResposta = ["ULA","EPROM","ROM","RAM","REGISTRADORES","MEMORIADEMASSA","I5","I7","CACHE",
         "FLASH","QUADCORE","DUALCORE","CPU","CS","DATABUS","ADDRESBUS","THREADS","DMA"];
         
-        
-        if (resposta == validarResposta) {
-            alert ('Resposta correta')
+        for(var i = 0; i <= validarResposta.length; i++){
+            if (resposta == validarResposta[i]) {
+                alert ('Resposta correta!')
+            } 
         }
-
+            
     }
 </script>
+

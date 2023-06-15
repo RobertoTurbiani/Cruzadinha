@@ -20,3 +20,24 @@ td{
     border: 0.5px solid black;
 
 }
+
+.cruzadaEresposta{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.resposta{
+    height: 20px;
+    width: 30%;
+}
+
+.dicas{
+    width: 95%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
