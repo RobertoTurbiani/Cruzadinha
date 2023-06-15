@@ -1,0 +1,22 @@
+
+.conteudo div{
+    display: flex;
+    justify-content: space-between;
+    width: 10px;
+}
+.cruzadinha{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+td{
+ 
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 38px;
+    background-color: beige;
+    border: 0.5px solid black;
+
+}
