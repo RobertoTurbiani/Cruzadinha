@@ -1,9 +1,13 @@
 
-.conteudo div{
-    display: flex;
-    justify-content: space-between;
-    width: 10px;
+body{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    font-size: 20px;
+    background-color: black;
+
 }
+
 .cruzadinha{
     display: flex;
     justify-content: center;
@@ -16,7 +20,7 @@ td{
     padding: 0;
     width: 100px;
     height: 38px;
-    background-color: black;
+    background-color: wheat;
     border: 0.5px solid black;
 
 }
@@ -36,8 +40,38 @@ td{
 .dicas{
     width: 95%;
     margin: auto;
+    background-color:gray;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    font-size: 15px;
+}
+
+img{
+    margin-top: 2rem;
+    width: 25rem;
+    margin-left: 30rem;
+}
+
+#div_msg {
+    color: black;
 }
 
 h1{
     text-align: center;
+}
+
+input{
+    height: 20px;
+    background-color: transparent;
+    color: white;
+    border: 3px dashed rgba(100,100,100,1);
+}
+
+button{
+    border-radius: 10px;
+    height: 30px;
+    width: 180px;
+    color: white;
+    background-color: rgba(100,100,100,0.1);
 }

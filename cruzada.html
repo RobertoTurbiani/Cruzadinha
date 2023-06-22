@@ -4,419 +4,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cruzadinha</title>
     <link rel="stylesheet" href="cruzada.css">
 </head>
 
 <body>
-
+<img src="data:image/jpeg;base64,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" alt="">
     <h1>CRUZADINHA</h1>
 
     <div class="cruzadaEresposta">
-    <table class="cruzadinha">
-
-
-        <tr>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="addresbus">A</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="eprom">E</td>
-            <td class="eprom">P</td>
-            <td class="eprom">R</td>
-            <td class="eprom">O</td>
-            <td class="eprom memoria de massa">M</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-
-        
-
-        <tr>
-
-            <td></td>
-            <td class="quadcore">Q</td>
-            <td class="quadcore">U</td>
-            <td class="quadcore">A</td>
-            <td class="addresbus quadcore">D</td>
-            <td class="quadcore">C</td>
-            <td class="quadcore">O</td>
-            <td class="quadcore">R</td>
-            <td class="quadcore">E</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="memoria de massa">E</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-        
-
-        <tr>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="addresbus">D</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="memoria de massa">M</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-
-        
-
-        <tr>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="addresbus">R</td>
-            <td></td>
-            <td class="flash">F</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="rom">R</td>
-            <td class="rom memoria de massa">O</td>
-            <td class="rom">M</td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-        
-
-        <tr>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="addresbus">E</td>
-            <td></td>
-            <td class="flash">L</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="cpu">C</td>
-            <td></td>
-            <td class="ram memoria de massa">R</td>
-            <td class="ram">A</td>
-            <td class="ram">M</td>
-            <td></td>
-
-        </tr>
-
-        
-
-        <tr>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="addresbus">S</td>
-            <td></td>
-            <td class="flash">A</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="cpu">P</td>
-            <td></td>
-            <td class="memoria de massa">I</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-        
-
-        <tr>
-
-            <td class="databus dualcore">D</td>
-            <td class="databus">A</td>
-            <td class="databus">T</td>
-            <td class="databus">A</td>
-            <td class="addresbus databus">B</td>
-            <td class="databus">U</td>
-            <td class="flash databus">S</td>
-            <td class="i7">7</td>
-            <td></td>
-            <td></td>
-            <td class="ula cpu">U</td>
-            <td class="ula">L</td>
-            <td class="ula memoria de massa">A</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-        
-
-        <tr>
-
-            <td class="dualcore">U</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="addresbus">U</td>
-            <td></td>
-            <td class="flash">H</td>
-            <td class="i5">I</td>
-            <td class="i5">5</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="dma memoria de massa">D</td>
-            <td class="dma">M</td>
-            <td class="dma">A</td>
-            <td></td>
-
-        </tr>
-
-        
-
-        <tr>
-
-            <td class="dualcore">A</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="addresbus">S</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="cache cs">C</td>
-            <td class="cache">A</td>
-            <td class="cache">C</td>
-            <td class="cache">H</td>
-            <td class="cache memoria de massa">E</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-        
-
-        <tr>
-
-            <td class="dualcore">L</td>
-            <td></td>
-            <td class="threads">T</td>
-            <td class="threads">H</td>
-            <td class="threads">R</td>
-            <td class="threads">E</td>
-            <td class="threads">A</td>
-            <td class="threads">D</td>
-            <td class="threads cs">S</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="memoria de massa">M</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-        
-
-        <tr>
-
-            <td class="dualcore">C</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="memoria de massa">A</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-        <tr>
-
-            <td class="dualcore">O</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="memoria de massa">S</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-        <tr>
-
-            <td class="registradores dualcore">R</td>
-            <td class="registradores">E</td>
-            <td class="registradores">G</td>
-            <td class="registradores">I</td>
-            <td class="registradores">S</td>
-            <td class="registradores">T</td>
-            <td class="registradores">R</td>
-            <td class="registradores">A</td>
-            <td class="registradores">D</td>
-            <td class="registradores">O</td>
-            <td class="registradores">R</td>
-            <td class="registradores">E</td>
-            <td class="registradores memoria de massa">S</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-        <tr>
-
-            <td class="dualcore">E</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="memoria de massa">A</td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-
-    </table>
-
-    <div class="resposta">
-        <input id="ipt_resposta">
-        <button onclick="responder()">Responder</button>
-    </div>
-
-    </div>
-
-        <div  id="dicas" class="dicas">
-            <h1>DICAS</h1>
-        1. Sou um componente essencial dentro de um processador, responsável por realizar cálculos e operações lógicas. Sem mim, a CPU teria dificuldades em executar tarefas matemáticas e lógicas complexas. Quem sou eu?<br>
-
-        2. Dentre as memórias, sou uma que permite a gravação de dados através de um processo especial. Sou considerada uma memória não volátil e amplamente utilizada para armazenar informações que precisam ser preservadas mesmo quando a energia é desligada. Quem sou eu?<br>
-
-        3. Sou um tipo de memória que contém dados permanentes pré-gravados durante a fabricação. Minha principal característica é que meus dados não podem ser alterados ou apagados pelo usuário. Quem sou eu?<br>
-
-        4. Sou uma memória que oferece alta velocidade de acesso e leitura de dados. Sou amplamente utilizada para armazenar temporariamente informações que estão sendo processadas ativamente pelo computador. Quem sou eu?<br>
-
-        5. Sou componentes de armazenamento de alta velocidade localizados dentro do processador. Meu objetivo é armazenar dados e instruções que são frequentemente acessados pela CPU. Quem sou eu?<br>
-
-        6. Sou um tipo de memória permanente que armazena dados mesmo quando o computador está desligado. Sou usada para armazenar informações de forma duradoura, como arquivos e programas. Quem sou eu?<br>
-
-        7. Sou uma linha de processadores desenvolvida pela Intel, conhecida por oferecer alto desempenho em tarefas computacionais. Sou amplamente utilizado em computadores pessoais e servidores. Quem sou eu?<br>
-
-        8. Sou uma linha de processadores desenvolvida pela Intel, conhecida por oferecer alto desempenho em tarefas computacionais. Sou amplamente utilizado em computadores pessoais e servidores. Quem sou eu?<br>
-
-        9. Sou uma memória de acesso rápido localizada entre a CPU e a memória principal. Meu objetivo é armazenar temporariamente dados frequentemente acessados pela CPU, a fim de acelerar a velocidade de processamento. Quem sou eu?<br>
-
-        10. Sou um tipo de memória não volátil que pode ser eletricamente apagada e reprogramada. Sou amplamente utilizado em dispositivos portáteis, como pen drives e cartões de memória. Quem sou eu?<br>
-
-        11. Sou uma descrição de um processador que possui quatro (quadcore) núcleos de processamento independentes em um único chip. Isso permite que o processador execute múltiplas tarefas simultaneamente. Quem sou eu?<br>
-
-        12. Sou uma descrição de um processador que possui dois (dualcore) núcleos de processamento independentes em um único chip. Isso permite que o processador execute múltiplas tarefas simultaneamente. Quem sou eu?<br>
-
-        13. Sou o cérebro do computador, responsável por executar instruções e processar dados. Sou composto por unidades de controle, registradores e uma Unidade Lógica e Aritmética (ULA). Quem sou eu?<br>
-
-        14. Sou a sigla para 'Chip Select' (Seleção de Chip). Sou um sinal utilizado para selecionar um dispositivo ou componente específico em um barramento de comunicação. Quem sou eu?<br>
-
-        15. Sou um caminho de comunicação utilizado para transferir dados entre componentes de um computador. Sou responsável por transmitir informações binárias em paralelo. Quem sou eu?<br>
-
-        16. Sou um caminho de comunicação utilizado para transmitir endereços de memória entre componentes de um computador. Sou responsável por indicar a localização específica dos dados que serão lidos ou gravados. Quem sou eu?<br>
-
-        17. Sou unidades individuais de execução dentro de um processador. Posso ser pensado como 'subprocessos' que permitem que a CPU realize múltiplas tarefas simultaneamente. Quem sou eu?<br>
-
-        18. Sou a sigla para 'Direct Memory Access' (Acesso Direto à Memória). Sou um recurso que permite que dispositivos periféricos acessem a memória principal diretamente, sem a intervenção da CPU. Quem sou eu?<br>
-        
+        <table class="cruzadinha">
+
+
+            <tr>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="addresbus">A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="eprom">E</td>
+                <td class="eprom">P</td>
+                <td class="eprom">R</td>
+                <td class="eprom">O</td>
+                <td class="eprom memoria de massa">M</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+
+
+
+            <tr>
+
+                <td></td>
+                <td class="quadcore">Q</td>
+                <td class="quadcore">U</td>
+                <td class="quadcore">A</td>
+                <td class="addresbus quadcore">D</td>
+                <td class="quadcore">C</td>
+                <td class="quadcore">O</td>
+                <td class="quadcore">R</td>
+                <td class="quadcore">E</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="memoria de massa">E</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="addresbus">D</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="memoria de massa">M</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+
+
+
+            <tr>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="addresbus">R</td>
+                <td></td>
+                <td class="flash">F</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="rom">R</td>
+                <td class="rom memoria de massa">O</td>
+                <td class="rom">M</td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="addresbus">E</td>
+                <td></td>
+                <td class="flash">L</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="cpu">C</td>
+                <td></td>
+                <td class="ram memoria de massa">R</td>
+                <td class="ram">A</td>
+                <td class="ram">M</td>
+                <td></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="addresbus">S</td>
+                <td></td>
+                <td class="flash">A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="cpu">P</td>
+                <td></td>
+                <td class="memoria de massa">I</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td class="databus dualcore">D</td>
+                <td class="databus">A</td>
+                <td class="databus">T</td>
+                <td class="databus">A</td>
+                <td class="addresbus databus">B</td>
+                <td class="databus">U</td>
+                <td class="flash databus">S</td>
+                <td class="i7">7</td>
+                <td></td>
+                <td></td>
+                <td class="ula cpu">U</td>
+                <td class="ula">L</td>
+                <td class="ula memoria de massa">A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td class="dualcore">U</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="addresbus">U</td>
+                <td></td>
+                <td class="flash">H</td>
+                <td class="i5">I</td>
+                <td class="i5">5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dma memoria de massa">D</td>
+                <td class="dma">M</td>
+                <td class="dma">A</td>
+                <td></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td class="dualcore">A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="addresbus">S</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="cache cs">C</td>
+                <td class="cache">A</td>
+                <td class="cache">C</td>
+                <td class="cache">H</td>
+                <td class="cache memoria de massa">E</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td class="dualcore">L</td>
+                <td></td>
+                <td class="threads">T</td>
+                <td class="threads">H</td>
+                <td class="threads">R</td>
+                <td class="threads">E</td>
+                <td class="threads">A</td>
+                <td class="threads">D</td>
+                <td class="threads cs">S</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="memoria de massa">M</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td class="dualcore">C</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="memoria de massa">A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+            <tr>
+
+                <td class="dualcore">O</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="memoria de massa">S</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+            <tr>
+
+                <td class="registradores dualcore">R</td>
+                <td class="registradores">E</td>
+                <td class="registradores">G</td>
+                <td class="registradores">I</td>
+                <td class="registradores">S</td>
+                <td class="registradores">T</td>
+                <td class="registradores">R</td>
+                <td class="registradores">A</td>
+                <td class="registradores">D</td>
+                <td class="registradores">O</td>
+                <td class="registradores">R</td>
+                <td class="registradores">E</td>
+                <td class="registradores memoria de massa">S</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+            <tr>
+
+                <td class="dualcore">E</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="memoria de massa">A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+        </table>
+
+        <div class="resposta">
+            <input id="ipt_resposta">
+            <button onclick="responder()">Responder</button>
+            <div id="div_msg"></div>
         </div>
-        
-    
 
-    
+    </div>
+
+    <div id="dicas" class="dicas">
+        <h1>DICAS</h1>
+        1. Sou um componente essencial dentro de um processador, responsável por realizar cálculos e operações lógicas.
+        Sem mim, a CPU teria dificuldades em executar tarefas matemáticas e lógicas complexas. Quem sou eu?<br><br>
+
+        2. Dentre as memórias, sou uma que permite a gravação de dados através de um processo especial. Sou considerada
+        uma memória não volátil e amplamente utilizada para armazenar informações que precisam ser preservadas mesmo
+        quando a energia é desligada. Quem sou eu?<br><br>
+
+        3. Sou um tipo de memória que contém dados permanentes pré-gravados durante a fabricação. Minha principal
+        característica é que meus dados não podem ser alterados ou apagados pelo usuário. Quem sou eu?<br><br>
+
+        4. Sou uma memória que oferece alta velocidade de acesso e leitura de dados. Sou amplamente utilizada para
+        armazenar temporariamente informações que estão sendo processadas ativamente pelo computador. Quem sou eu?<br><br>
+
+        5. Sou componentes de armazenamento de alta velocidade localizados dentro do processador. Meu objetivo é
+        armazenar dados e instruções que são frequentemente acessados pela CPU. Quem sou eu?<br><br>
+
+        6. Sou um tipo de memória permanente que armazena dados mesmo quando o computador está desligado. Sou usada para
+        armazenar informações de forma duradoura, como arquivos e programas. Quem sou eu?<br><br>
+
+        7. Sou uma linha de processadores desenvolvida pela Intel, conhecida por oferecer alto desempenho em tarefas
+        computacionais. Sou amplamente utilizado em computadores pessoais e servidores. Quem sou eu?<br><br>
+
+        8. Sou uma linha de processadores desenvolvida pela Intel, conhecida por oferecer alto desempenho em tarefas
+        computacionais. Sou amplamente utilizado em computadores pessoais e servidores. Quem sou eu?<br><br>
+
+        9. Sou uma memória de acesso rápido localizada entre a CPU e a memória principal. Meu objetivo é armazenar
+        temporariamente dados frequentemente acessados pela CPU, a fim de acelerar a velocidade de processamento. Quem
+        sou eu?<br><br>
+
+        10. Sou um tipo de memória não volátil que pode ser eletricamente apagada e reprogramada. Sou amplamente
+        utilizado em dispositivos portáteis, como pen drives e cartões de memória. Quem sou eu?<br><br>
+
+        11. Sou uma descrição de um processador que possui quatro (quadcore) núcleos de processamento independentes em
+        um único chip. Isso permite que o processador execute múltiplas tarefas simultaneamente. Quem sou eu?<br><br>
+
+        12. Sou uma descrição de um processador que possui dois  núcleos de processamento independentes em um
+        único chip. Isso permite que o processador execute múltiplas tarefas simultaneamente. Quem sou eu?<br><br>
+
+        13. Sou o cérebro do computador, responsável por executar instruções e processar dados. Sou composto por
+        unidades de controle, registradores e uma Unidade Lógica e Aritmética. Quem sou eu?<br><br>
+
+        14. Sou um sinal utilizado para selecionar um dispositivo ou componente específico em um barramento de comunicação.(Sigla) Quem sou eu?<br><br>
+
+        15. Sou um caminho de comunicação utilizado para transferir dados entre componentes de um computador. Sou
+        responsável por transmitir informações binárias em paralelo. Quem sou eu?<br><br>
+
+        16. Sou um caminho de comunicação utilizado para transmitir endereços de memória entre componentes de um
+        computador. Sou responsável por indicar a localização específica dos dados que serão lidos ou gravados. Quem sou
+        eu?<br><br>
+
+        17. Sou unidades individuais de execução dentro de um processador. Posso ser pensado como 'subprocessos' que
+        permitem que a CPU realize múltiplas tarefas simultaneamente. Quem sou eu?<br><br>
+
+        18. Sou a sigla para 'Direct Memory Access'. Sou um recurso que permite que
+        dispositivos periféricos acessem a memória principal diretamente, sem a intervenção da CPU. Quem sou eu?<br><br>
+
+    </div>
+
+
+
+
 </body>
 
 </html>
 
 <script>
+
+    var pontuacao = 0
     function responder() {
+
 
         var resposta = ipt_resposta.value;
         var respostaCerta = false
-           
-        var validarResposta = ["ULA","EPROM","ROM","RAM","REGISTRADORES","MEMORIA DE MASSA","I5","I7","CACHE",
-        "FLASH","QUADCORE","DUALCORE","CPU","CS","DATABUS","ADDRESBUS","THREADS","DMA"];
-        
-        for(var i = 0; i <= validarResposta.length; i++){
+
+        var validarResposta = ["ULA", "EPROM", "ROM", "RAM", "REGISTRADORES", "MEMORIA DE MASSA", "I5", "I7", "CACHE",
+            "FLASH", "QUADCORE", "DUALCORE", "CPU", "CS", "DATABUS", "ADDRESBUS", "THREADS", "DMA"];
+
+        for (var i = 0; i <= validarResposta.length; i++) {
             if (resposta.toUpperCase() == validarResposta[i]) {
                 respostaCerta = true
-            } 
+
+            }
         }
-        if(respostaCerta == true) {
-            alert("Resposta correta") 
-            mostrar(resposta) 
-        }else {
+        if (respostaCerta == true) {
+            alert("Resposta correta")
+            mostrar(resposta)
+            pontuacao += 100
+
+            div_msg.innerHTML = `<div style="color: green;">${pontuacao}</div>`
+
+        } else {
             alert("Essa palavra não existe na cruzadinha! \n Leia as dicas e tente novamente!")
+            pontuacao -= 50
+            div_msg.innerHTML = `<div style="color: green;">${pontuacao}</div>`
+
         }
 
-    function mostrar (resposta) {
-        var revelar = document.getElementsByClassName(`${resposta}`);
-        for (var i = 0; i < revelar.length; i++) {
-            const letras = revelar[i];
-            letras.style.backgroundColor = "white"
+        if (pontuacao < 0) {
+            alert('Faltou na aula de ARQCOMP em')
+            div_msg.innerHTML = `<div style="color: red;">${pontuacao}</div>`
+
+        }
+
+        if (pontuacao == 1800) {
+            alert('Professor Eduardo vai te levar no bovinus pela dedicação')
+            window.location = 'cruzada.html'
+        }
+
+        function mostrar(resposta) {
+            var revelar = document.getElementsByClassName(`${resposta}`);
+            for (var i = 0; i < revelar.length; i++) {
+                const letras = revelar[i];
+                letras.style.backgroundColor = "transparent"
             }
-            }
-            
+        }
+
     }
 </script>
-
